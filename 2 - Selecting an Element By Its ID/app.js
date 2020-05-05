@@ -2,7 +2,6 @@ const heading = document.getElementById("heading");
 const heading = document.getElementById("input");
 const heading = document.getElementById("button");
 
-button.addEventListener("click", ()=>{
+button.addEventListener("click",()=>{
     heading.style.color = input.value;
-}
-);
+});
