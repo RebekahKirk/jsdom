@@ -3,7 +3,6 @@ const button = document.getElementById('submit');
 const removeBtn = document.getElementById('remove');
 
 /*declare new const*/
-const listItem = document.getElementsByTagName('li');
 
 button.addEventListener('click', () => {
     let listItem = document.createElement('li');
@@ -24,12 +23,3 @@ removeBtn.addEventListener('click', () => {
 })
 
 /*New code below*/
-
-for(let i = 0; i < listItem.length; i++) {
-    listItem[i].addEventListener('mouseover', () => {
-        listItem[i].textContent = listItem[i].textContent.toUpperCase();
-    });
-    listItem[i].addEventListener('mouseout', () => {
-        listItem[i].textContent = listItem[i].textContent.toLowerCase()
-    })
-}
