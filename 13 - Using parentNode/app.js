@@ -16,3 +16,10 @@ button.addEventListener('click', () => {
 })
 
 /*New code below*/
+list.addEventListener("click",(event)=>{
+    if (event.target.tagName == "LI"){
+        let li = event.target;
+        let ul = li.parentNode;
+        ul.removeChild(li);
+    }
+})
